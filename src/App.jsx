@@ -29,15 +29,6 @@ function App() {
           <div className="w-64 mb-10">
             <img src={supakarLogo} alt="Supakar Logo" />
           </div>
-          <button
-            onClick={start}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-5 rounded"
-          >
-            START
-          </button>
-          <div className="text-center text-lg transitison duration-300">
-            {instruction}
-          </div>
         </div>
       </div>
     </>
