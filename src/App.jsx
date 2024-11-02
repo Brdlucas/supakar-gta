@@ -90,7 +90,7 @@ function App() {
           </div>
           <div className="w-100 h-[90%] flex flex-col justify-around">
             <div className="w-2/4 m-auto h-2/4 mb-32">
-            <img src={`/public/cars/${newcolor}.png`} alt="gray-car" className="rounded-lg"/>
+            <img src={`/cars/${newcolor}.png`} alt="gray-car" className="rounded-lg"/>
             </div>
             <div className="m-auto w-100 bg-black text-center">
             <p className="m-auto text-white text-4xl	">Select a color for your car</p>
@@ -128,7 +128,7 @@ function App() {
           </div>
           <button
       onClick={start}
-      className={`bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 mb-5 rounded`}
+      className={`bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 mb-5 text-white rounded`}
     >
       START
     </button>
