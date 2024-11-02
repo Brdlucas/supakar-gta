@@ -14,42 +14,35 @@ function App() {
   const [hidden, setHidden] = useState('');
   const [CarHidden, setCarHidden] = useState('hidden');
   
-  
-  
-  
+
   function OnClick(e){
     selectAudio.play();
     e.preventDefault();
     switch (e.target.id){
       case 'gray':
-        console.log('gray');
         setNewColor('gray');
         break;
       case 'yellow':
-        console.log('yellow');
         setNewColor('yellow');
         break;
       case 'green':
-        console.log('green');
         setNewColor('green');
         break;
       case 'purple':
-        console.log('purple');
         setNewColor('purple');
         break;
       case 'skyblue':
-        console.log('skyblue');
         setNewColor('skyblue');
         break;
       case 'brown':
-        console.log('brown');
         setNewColor('brown');
         break;
       default:
-          console.log('aucune couleur associé');
           setNewColor('brown');
     }
-    sprayAudio.play();
+    setTimeout(() => {
+      sprayAudio.play();
+    }, 100)
   }
 
 
@@ -66,11 +59,7 @@ function App() {
     }
   }
   
-
-
   function DisplayFirstPageCar(){
-
-   
       
     return(
       <div
@@ -145,9 +134,6 @@ function App() {
       setHidden('hidden');
       setCarHidden('block');
     }, 500);
-
-
-    
   };
 
   return (
