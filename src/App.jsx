@@ -1,15 +1,20 @@
 import { useState } from "react";
 import supakarLogo from "../public/logo.png";
-// import loading from "../public/sounds/loading.mp3";
+import loading from "../public/sounds/loading.mp3";
+import select from "../public/sounds/select.wav";
+import spray from "../public/sounds/spray.wav";
 
 function App() {
   // const [instruction, setInstruction] = useState("Click on START to begin.");
-  // const audio = new Audio(loading);
-  // const [newclass, setNewClass] = useState('text-black'); 
+  const audio = new Audio(loading);
+  const selectAudio = new Audio(select);
+  const sprayAudio = new Audio(spray);
   const [newcolor, setNewColor] = useState('brown')
-
-
+  let isTrue = false;
+  
+  
   function OnClick(e){
+    selectAudio.play();
     e.preventDefault();
     switch (e.target.id){
       case 'gray':
@@ -40,6 +45,21 @@ function App() {
           console.log('aucune couleur associé');
           setNewColor('brown');
     }
+    sprayAudio.play();
+  }
+
+
+  function LoadingAudio(){
+
+    if(isTrue === true){
+      audio.pause();
+      isTrue = false;
+
+    }else{
+      isTrue = true;
+      audio.play();
+
+    }
   }
 
   function DisplayFirstPage(){
@@ -53,8 +73,9 @@ function App() {
         }}
         >
         <div className="z-0 bg-black h-fit h-screen">
-          <div className="h-fit size-56 pt-5 pl-5">
-            <img src={supakarLogo} alt="Supakar Logo" />
+          <div className="h-fit p-5 flex flex-row justify-between w-full">
+            <img src={supakarLogo} alt="Supakar Logo" className="w-40" />
+            <button onClick={LoadingAudio}><img src="../public/sound.png" alt="" className="w-10"/></button>
           </div>
           <div className="w-100 h-[90%] flex flex-col justify-around">
             <div className="w-2/4 m-auto h-2/4 mb-32">
