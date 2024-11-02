@@ -86,7 +86,7 @@ function App() {
         <div className="z-0 bg-black h-fit h-screen">
           <div className="h-fit p-5 flex flex-row justify-between w-full">
             <img src={supakarLogo} alt="Supakar Logo" className="w-40" />
-            <button  onClick={LoadingAudio} id='audioLoad'><img src="../public/sound.png" alt="" className="w-10"/></button>
+            <button  onClick={LoadingAudio} id='audioLoad'><img src="/sound.png" alt="" className="w-10"/></button>
           </div>
           <div className="w-100 h-[90%] flex flex-col justify-around">
             <div className="w-2/4 m-auto h-2/4 mb-32">
