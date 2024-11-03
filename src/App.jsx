@@ -83,24 +83,24 @@ function App() {
           backgroundRepeat: "no-repeat",
         }}
         >
-        <div className="z-0 bg-black h-fit h-screen">
-          <div className="h-fit p-5 flex flex-row justify-between w-full">
+        <div className="z-0 bg-black h-fit h-screen ">
+          <div className="h-fit p-5 flex flex-row justify-between w-full max-sm:pb-8 ">
             <img src={supakarLogo} alt="Supakar Logo" className="w-40" />
             <button  onClick={LoadingAudio} id='audioLoad'><img src="/sound.png" alt="" className="w-10"/></button>
           </div>
-          <div className="w-100 h-[90%] flex flex-col justify-around">
-            <div className="w-2/4 m-auto h-2/4 mb-32">
+          <div className="w-100 h-[90%] max-sm:h-[50%] flex flex-col justify-around max-sm:pt-5">
+            <div className="w-2/4 max-lg:w-[90%] m-auto h-2/4 mb-32 max-sm:w-[90%]">
             <img src={`/cars/${newcolor}.png`} alt="gray-car" className="rounded-lg"/>
             </div>
-            <div className="m-auto w-100 bg-black text-center">
-            <p className="m-auto text-white text-4xl	">Select a color for your car</p>
+            <div className="m-auto w-100  bg-black text-center">
+            <p className="m-auto text-white text-4xl	max-sm:text-2xl">Select a color for your car</p>
             <ul className="m-auto h-fit flex flex-row gap-4 w-fit p-5">
-            <input type="button" onClick={OnClick} id="gray"  className="hover:cursor-pointer bg-gray-200 w-12 h-12 rounded-full border-2 border-white"></input>
-            <input type="button" onClick={OnClick} id="yellow" className="hover:cursor-pointer bg-yellow-200 w-12 h-12 rounded-full border-2 border-white"></input>
-            <input type="button" onClick={OnClick} id="green" className="hover:cursor-pointer bg-green-200 w-12 h-12 rounded-full border-2 border-white"></input>
-            <input type="button" onClick={OnClick} id="purple" className="hover:cursor-pointer bg-purple-200 w-12 h-12 rounded-full border-2 border-white"></input>
-            <input type="button" onClick={OnClick} id="skyblue" className="hover:cursor-pointer bg-blue-200 w-12 h-12 rounded-full border-2 border-white"></input>
-            <input type="button" onClick={OnClick} id="brown" className="hover:cursor-pointer bg-amber-600 w-12 h-12 rounded-full border-2 border-white"></input>
+            <input type="button" onClick={OnClick} id="gray"  className="hover:cursor-pointer bg-gray-200 max-sm:w-8 max-sm:h-8 w-12 h-12 rounded-full border-2 border-white"></input>
+            <input type="button" onClick={OnClick} id="yellow" className="hover:cursor-pointer bg-yellow-200 max-sm:w-8 max-sm:h-8 w-12 h-12 rounded-full border-2 border-white"></input>
+            <input type="button" onClick={OnClick} id="green" className="hover:cursor-pointer bg-green-200 max-sm:w-8 max-sm:h-8 w-12 h-12 rounded-full border-2 border-white"></input>
+            <input type="button" onClick={OnClick} id="purple" className="hover:cursor-pointer bg-purple-200 max-sm:w-8 max-sm:h-8 w-12 h-12 rounded-full border-2 border-white"></input>
+            <input type="button" onClick={OnClick} id="skyblue" className="hover:cursor-pointer bg-blue-200 max-sm:w-8 max-sm:h-8 w-12 h-12 rounded-full border-2 border-white"></input>
+            <input type="button" onClick={OnClick} id="brown" className="hover:cursor-pointer bg-amber-600 max-sm:w-8 max-sm:h-8 w-12 h-12 rounded-full border-2 border-white"></input>
             </ul>
             </div>
           </div>
@@ -122,7 +122,7 @@ function App() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="p-10 flex flex-col items-center justify-center shadow-2xl rounded-2xl w-96 bg-white bg-opacity-70">
+        <div className="p-10 flex flex-col items-center justify-center shadow-2xl rounded-2xl w-96 max-sm:w-72 bg-white bg-opacity-70">
           <div className="w-64 mb-10">
             <img src={supakarLogo} alt="Supakar Logo" />
           </div>
